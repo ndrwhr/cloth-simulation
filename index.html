@@ -27,9 +27,7 @@
         <a href="http://andrew-hoyer.com">Home</a>/<a href="http://andrew-hoyer.com/experiments">Experiments</a>
     </nav>
 
-    <h3>A little explanation:</h3>
-
-    <p>Every line in the cloth simulation is technically called a constraint and every point is a point mass (an object with no dimension, just location and mass). All the constraints do is control the distance between each point mass. If two points move too far apart, it will pull them closer. If two points are too close together, it will push them apart. The cloth is really then just a collection of constraints and point masses in a never ending struggle. <a class="show-details" href="#details">Click here to learn more?</a></p>
+    <p>Every line in the cloth simulation is technically called a constraint and every point is a point mass (an object with no dimension, just location and mass). All the constraints do is control the distance between each point mass. If two points move too far apart, it will pull them closer. If two points are too close together, it will push them apart. The cloth is really then just a collection of constraints and point masses in a never ending struggle.</p>
 
     <div class="social-links">
         <iframe src="http://www.facebook.com/plugins/like.php?href=http://andrew-hoyer.com/experiments/cloth/&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
@@ -76,26 +74,6 @@
             <li><a href="http://www.jrc313.com/processing/cloth/index.html">'Processing' cloth simulation</a> A much more powerful implementation of what I've done here using the processing library.</li>
         </ul>
     </div>
-
-<script type="text/javascript" charset="utf-8">
-    (function(){
-        var visible;
-        document.getElement('a.show-details').addEvent('click', function(event){
-            event.preventDefault();
-
-            if (visible) return;
-            else visible = true;
-
-            document.id('details').addClass('visible');
-
-            var top = window.pageYOffset;
-            var timer = (function(){
-                if (top < 450) window.scrollTo(0, top += 10);
-                else clearInterval(timer);
-            }).periodical(5);
-        });
-    })();
-</script>
 
 </div>
 </body>
